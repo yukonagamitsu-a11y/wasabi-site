@@ -11,6 +11,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
 body{font-family:"PT Sans",Arial,sans-serif;font-size:18px;line-height:1.5;color:var(--ink);background:#fff}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
@@ -217,7 +218,7 @@ footer a:hover{text-decoration:underline}
   footer .wrap{flex-direction:column;align-items:center;text-align:center}
 
   .dock{
-    display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:50;
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:50;
     padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid #ccc;box-shadow:0 -2px 8px rgba(0,0,0,.14);
   }
   .dock a{
@@ -274,7 +275,8 @@ footer{font-size:15px;letter-spacing:.04em}
   .item .d{font-size:15.5px}
   .intro p,.about-text p{font-size:17px}
   .dock a{font-size:12px;letter-spacing:.14em}
-  .dock a strong{font-size:19px;font-weight:600;letter-spacing:.08em}
+  .dock a{min-width:0;padding:0 6px}
+  .dock a strong{font-size:clamp(15px,4.8vw,19px);font-weight:600;letter-spacing:.04em;white-space:nowrap}
   .call-btn strong{font-size:28px}
 }
 
