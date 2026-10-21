@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dinner Menu | Wasabi Japanese Restaurant</title>
+<meta name="description" content="Wasabi dinner menu with prices. Ridgewood, NJ.">
+<meta name="robots" content="noindex, nofollow"><!-- prototype stage: remove this line when the site goes live -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap info-row">
+    <a class="info-box" href="tel:+12014937575">Call for takeout <span class="num">201-493-7575</span></a>
+    <a class="info-box" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">848 E. Ridgewood Ave<br>Ridgewood, NJ 07450</a>
+  </div>
+  <div class="navbar">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Wasabi Japanese Restaurant - Home"><img src="images/logo-round.png" alt="Wasabi Japanese Restaurant"></a>
+      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">&#8801;</button>
+      <ul class="nav" id="site-nav">
+        <li><a href="lunch-menu.html">Lunch Menu</a></li>
+        <li><a href="dinner-menu.html" aria-current="page">Dinner Menu</a></li>
+        <li class="spacer" aria-hidden="true"></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="home-li"><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap banner menu-banner">
+    <div class="frame"><picture><source media="(max-width:820px)" srcset="images/banner-dinner-m.jpg"><img src="images/banner-dinner.jpg" alt=""></picture></div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap menu-wrap">
+    <h1 class="page-title">Wasabi's DINNER Menu</h1>
+    <p class="menu-sub">Dinner 5:00pm - 9:00pm &middot; <strong>Closed on Tuesdays</strong></p>
+    <p class="price-note">Prices will be added here.</p>
+    <div class="menu-actions">
+      <a class="btn ghost" href="lunch-menu.html">View Lunch Menu</a>
+      <button class="btn ghost" id="print-btn" type="button">Print this menu</button>
+    </div>
+    <nav class="chips" id="chips" aria-label="Menu categories"></nav>
+    <div id="menu-root" data-menu="dinner" data-chips="chips" data-print="print-btn"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">Home</a><a href="lunch-menu.html">Lunch Menu</a><a href="dinner-menu.html">Dinner Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+    </nav>
+    <span>&copy; 2026 Wasabi Japanese Restaurant</span>
+  </div>
+</footer>
+
+<div class="dock">
+  <a class="d-call" href="tel:+12014937575">Call <strong>201-493-7575</strong></a>
+  <a class="d-map" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">Directions <strong>Map</strong></a>
+</div>
+
+<script src="menu-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
