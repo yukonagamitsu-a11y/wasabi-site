@@ -64,8 +64,8 @@ FOOT = '''
 </footer>
 
 <div class="dock">
-  <a class="d-call" href="tel:+12014937575">Call <strong>201-493-7575</strong></a>
-  <a class="d-map" href="%s" target="_blank" rel="noopener">Directions <strong>Map</strong></a>
+  <a class="d-call" href="tel:+12014937575"><span>Call</span> <strong>201-493-7575</strong></a>
+  <a class="d-map" href="%s" target="_blank" rel="noopener" aria-label="Directions on Google Maps"><strong>Map</strong></a>
 </div>
 
 %%s<script src="script.js"></script>
