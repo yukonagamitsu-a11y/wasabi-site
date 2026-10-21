@@ -23,9 +23,9 @@ h2 em{font-style:normal;color:var(--red)}
 /* ---------- header ---------- */
 .top{position:relative;background:#e9eef2}
 .top::before{
-  content:"";position:absolute;inset:-60px;
+  content:"";position:absolute;inset:0;
   background:url("images/banner-sushi.jpg") center/cover no-repeat;
-  filter:blur(28px) saturate(.9) brightness(1.5);opacity:.35;clip-path:inset(60px);
+  filter:blur(18px) saturate(.9) brightness(1.5);opacity:.35;
 }
 .top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:repeating-linear-gradient(90deg,#c9c9c9 0 3px,transparent 3px 6px)}
 .top>*{position:relative;z-index:1}
