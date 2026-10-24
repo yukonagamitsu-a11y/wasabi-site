@@ -40,6 +40,15 @@ h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
 /* ---------- home ---------- */
 .hero{position:relative;min-height:calc(100vh - 90px);min-height:calc(100svh - 90px);display:grid;place-items:center;color:#fff;overflow:hidden}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .slide{opacity:0;animation:slide 24s infinite}
+.hero .slide:nth-of-type(2){animation-delay:6s}
+.hero .slide:nth-of-type(3){animation-delay:12s}
+.hero .slide:nth-of-type(4){animation-delay:18s}
+@keyframes slide{0%{opacity:0}4%{opacity:1}25%{opacity:1}29%{opacity:0}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .hero .slide{animation:none}
+  .hero .slide:first-of-type{opacity:1}
+}
 .hero::after{content:"";position:absolute;inset:0;background:rgba(15,4,5,.5)}
 .hero-text{position:relative;z-index:2;text-align:center;padding:60px 20px}
 .script{font-family:var(--serif);font-style:italic;font-size:44px;color:#f0d9b5;line-height:1}
