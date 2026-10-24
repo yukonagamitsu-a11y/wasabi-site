@@ -30,6 +30,8 @@ h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
   text-decoration:none;font-family:var(--serif);font-size:21px;letter-spacing:.08em;text-align:center;
 }
 .btn:hover{background:var(--red);border-color:var(--red)}
+.btn.call{display:inline-flex;flex-direction:column;align-items:center;line-height:1.35}
+.btn.call strong{font-weight:600;font-size:26px;letter-spacing:.06em;white-space:nowrap}
 .btn.solid{background:var(--red);border-color:var(--red)}
 .btn.solid:hover{background:var(--red-btn);border-color:var(--red-btn)}
 .btn.dark{color:var(--red);border-color:var(--red);background:transparent}
