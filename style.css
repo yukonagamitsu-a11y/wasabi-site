@@ -50,7 +50,7 @@ h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
   .hero .slide{animation:none}
   .hero .slide:first-of-type{opacity:1}
 }
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(15,4,5,.88)),rgba(15,4,5,.3)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(15,4,5,.55)),rgba(15,4,5,.3)}
 .hero-text{position:relative;z-index:2;text-align:center;padding:60px 20px}
 .script{font-family:var(--serif);font-style:italic;font-size:44px;color:#f0d9b5;line-height:1}
 .hero h1{font-size:clamp(34px,6vw,64px);margin:10px 0 4px;letter-spacing:.03em;text-shadow:0 2px 8px rgba(0,0,0,.5)}
