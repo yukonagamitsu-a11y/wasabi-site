@@ -64,6 +64,7 @@ h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
 .visit a{text-decoration:none}
 .visit a:hover{text-decoration:underline}
 .closed{color:#ff8c90}
+.resv{margin-top:8px;font-family:var(--serif);font-style:italic;font-size:19px;color:#f0d9b5}
 .visit .delivery{grid-column:1/-1;margin-top:10px}
 .btn.small{padding:5px 20px;font-size:17px;border-color:#8c7a70;color:#cfc4bb;background:transparent}
 .btn.small:hover{color:#fff}
