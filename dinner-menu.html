@@ -8,63 +8,749 @@
 <meta name="robots" content="noindex, nofollow"><!-- prototype stage: remove this line when the site goes live -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <div class="wrap info-row">
-    <a class="info-box" href="tel:+12014937575">Call for takeout <span class="num">201-493-7575</span></a>
-    <a class="info-box" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">848 E. Ridgewood Ave<br>Ridgewood, NJ 07450</a>
-  </div>
-  <div class="navbar">
-    <div class="wrap">
-      <a class="logo" href="index.html" aria-label="Wasabi Japanese Restaurant - Home"><img src="images/logo-round.png" alt="Wasabi Japanese Restaurant"></a>
-      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">&#8801;</button>
-      <ul class="nav" id="site-nav">
-        <li><a href="lunch-menu.html">Lunch Menu</a></li>
-        <li><a href="dinner-menu.html" aria-current="page">Dinner Menu</a></li>
-        <li class="spacer" aria-hidden="true"></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li class="home-li"><a href="index.html">Home</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap banner menu-banner">
-    <div class="frame"><picture><source media="(max-width:820px)" srcset="images/banner-dinner-m.jpg"><img src="images/banner-dinner.jpg" alt=""></picture></div>
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Wasabi Japanese Restaurant - Home"><img src="images/logo-round.png" alt="Wasabi Japanese Restaurant"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="lunch-menu.html">Lunch</a>
+      <a href="dinner-menu.html" aria-current="page">Dinner</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
 <main>
-  <div class="wrap menu-wrap">
-    <h1 class="page-title">Wasabi's DINNER Menu</h1>
-    <p class="menu-sub">Dinner 5:00pm - 9:00pm &middot; <strong>Closed on Tuesdays</strong></p>
-    <p class="price-note">Prices will be added here.</p>
-    <div class="menu-actions">
-      <a class="btn ghost" href="lunch-menu.html">View Lunch Menu</a>
-      <button class="btn ghost" id="print-btn" type="button">Print this menu</button>
-    </div>
-    <nav class="chips" id="chips" aria-label="Menu categories"></nav>
-    <div id="menu-root" data-menu="dinner" data-chips="chips" data-print="print-btn"></div>
-  </div>
+<div class="wrap menu">
+  <h1>Dinner Menu</h1>
+  <p class="sub">Dinner 5:00pm - 9:00pm &middot; <strong>Closed on Tuesdays</strong></p>
+  <p class="note">Prices will be added here.</p>
+  <nav class="chips" aria-label="Menu categories">
+    <a href="#dinner-soup-salad">Soup &amp; Salad</a>
+    <a href="#dinner-hot-appetizer">Hot Appetizer</a>
+    <a href="#dinner-cold-appetizer">Cold Appetizer</a>
+    <a href="#dinner-wasabi-original-roll">Wasabi Original Roll</a>
+    <a href="#dinner-spicy-roll">Spicy Roll</a>
+    <a href="#dinner-fashion-roll">Fashion Roll</a>
+    <a href="#dinner-regular-roll">Regular Roll</a>
+    <a href="#dinner-sushi-sashimi-entree">Sushi &amp; Sashimi Entree</a>
+    <a href="#dinner-a-la-carte">A La Carte</a>
+    <a href="#dinner-teriyaki">Teriyaki</a>
+    <a href="#dinner-tempura">Tempura</a>
+    <a href="#dinner-katsu">Katsu</a>
+    <a href="#dinner-donburi">Donburi</a>
+    <a href="#dinner-noodle">Noodle</a>
+    <a href="#dinner-combination-dinner-box">Combination Dinner Box</a>
+    <a href="#dinner-beverages">Beverages</a>
+    <a href="#dinner-desserts">Desserts</a>
+  </nav>
+
+  <section id="dinner-soup-salad">
+    <h2>Soup &amp; Salad</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Miso Soup<i>味噌汁</i></span></div>
+        <p class="d">Bean paste soup</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp Shumai Soup<i>えびシューマイスープ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Clear Soup<i>お吸い物</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Mixed Green Salad<i>グリーンサラダ</i></span><span class="p"><span><small>Small</small></span><span><small>Large</small></span></span></div>
+        <p class="d">Served with ginger dressing</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Avocado Salad<i>アボカドサラダ</i></span><span class="p"><span><small>Small</small></span><span><small>Large</small></span></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Soba Salad<i>そばサラダ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chuka (Seaweed) Salad<i>中華サラダ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Kani (Crabmeat) Salad<i>カニサラダ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Wafu Salad<i>和風サラダ</i></span></div>
+        <p class="d">Shrimp or salmon skin</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-hot-appetizer">
+    <h2>Hot Appetizer</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Sweet Potato French Fries<i>フレンチさつま</i></span></div>
+        <p class="d">Served with spicy mayo</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Edamame<i>枝豆</i></span></div>
+        <p class="d">Steamed beans</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Gyoza<i>ギョーザ</i></span></div>
+        <p class="d">Fried pork dumplings</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Vegetable Gyoza<i>野菜ギョーザ</i></span></div>
+        <p class="d">Fried vegetable dumplings</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Ebi Shumai<i>えびシューマイ</i></span></div>
+        <p class="d">Steamed shrimp dumplings</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Hijiki<i>ひじき</i></span></div>
+        <p class="d">Cooked Japanese black seaweed</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Harumaki<i>春巻き</i></span></div>
+        <p class="d">Vegetable spring rolls</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Vegetable Tempura<i>野菜天ぷら</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Nasu Shigi<i>茄子しぎ</i></span></div>
+        <p class="d">Eggplant with sweet miso</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chicken Yakitori<i>焼き鳥</i></span></div>
+        <p class="d">Grilled skew chicken</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Agedashi Tofu<i>揚げ出し豆腐</i></span></div>
+        <p class="d">Fried Japanese tofu</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Wasabi Shumai<i>わさびシューマイ</i></span></div>
+        <p class="d">Steamed wasabi flavored dumplings</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Jumbo Shrimp Shumai<i>ジャンボえびシューマイ</i></span></div>
+        <p class="d">Steamed dumplings</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Mixed Tempura<i>天ぷら</i></span></div>
+        <p class="d">Shrimp and vegetable</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sweet Pepper Tempura<i>獅子唐てんぷら</i></span></div>
+        <p class="d">Stuffed with shrimp</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp Tempura<i>エビ天ぷら</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Crispy Martini Shrimp<i>えびマティーニ</i></span></div>
+        <p class="d">Spicy sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tatsuta Age<i>竜田揚げ</i></span></div>
+        <p class="d">Japanese style fried chicken</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chicken Teriyaki<i>チキン照り焼き</i></span></div>
+        <p class="d">Chicken Teriyaki Appetizer</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Beef Negimaki<i>ねぎま</i></span></div>
+        <p class="d">Marinated Japanese style grilled beef</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Fried Calamari<i>カラマリ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Ika Yaki<i>焼きイカ</i></span></div>
+        <p class="d">Grilled whole squid with Japanese mayo</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Asari Clam<i>アサリ酒蒸し</i></span></div>
+        <p class="d">Steamed with sake</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Saba Shio<i>サバの塩焼き</i></span></div>
+        <p class="d">Grilled mackerel</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Black Cod Miso<i>タラ西京焼き</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Hamachi Kama<i>はまちカマ</i></span></div>
+        <p class="d">Grilled yellowtail neck</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-cold-appetizer">
+    <h2>Cold Appetizer</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Fresh Tuna or Salmon Carpaccio<i>サーモンカルパッチョ</i></span></div>
+        <p class="d">Served with avocado and chef special wasabi flavored ponzu sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Wild Yellowtail Jalapeno with Yuzu Sauce<i>はまち柚子辛子</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tataki (White Tuna or Tuna)<i>鮪タタキ</i></span></div>
+        <p class="d">Seared and marinated tuna/white tuna with chef special sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Salmon Salsa<i>サーモンサルサ</i></span></div>
+        <p class="d">Sliced salmon with salsa sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sashimi Salad<i>刺身サラダ</i></span></div>
+        <p class="d">Mixed sashimi salad with chef special dressing</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tuna Avocado Salad<i>鮪アボカドサラダ</i></span></div>
+        <p class="d">Diced cut tuna salad with ginger sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Seafood Cebiche<i>セビチェ</i></span></div>
+        <p class="d">Fresh seafood with cebiche sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sashimi (6 pcs)</span><span class="p"><span><small>Tuna</small></span><span><small>Salmon</small></span><span><small>Yellowtail</small></span><span><small>Tuna &amp; Yellowtail</small></span></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Usuzukuri<i>薄造り</i></span></div>
+        <p class="d">Thin slices of fluke with ponzu sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Spicy Tartar</span><span class="p"><span><small>Tuna</small></span><span><small>Salmon</small></span></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Kinuta Maki<i>砧巻き</i></span></div>
+        <p class="d">Tuna or salmon rolls wrapped with cucumber with ginger and spicy sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Scallop Cebiche<i>帆立セビチェ</i></span></div>
+        <p class="d">Fresh scallop with cebiche sauce</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-wasabi-original-roll">
+    <h2>Wasabi Original Roll</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Salmon Tsutsumi<i>サーモン包み</i></span><span class="p"><span><small>Large 4 pcs</small></span></span></div>
+        <p class="d">Asparagus and crab roll topped with baked salmon</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Rainbow<i>レインボー</i></span></div>
+        <p class="d">California topped with 4 kinds fish and avocado</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Dragon<i>ドラゴン</i></span></div>
+        <p class="d">Eel and cucumber topped with avocado</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Red Velvet<i>レッドベルベット</i></span></div>
+        <p class="d">Red caviar over tuna, yellowtail, salmon, avocado; wide cut</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Atlantic<i>アトランティック</i></span></div>
+        <p class="d">Salmon, avocado topped with tuna, salmon and ikura</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Wasabi<i>わさび</i></span></div>
+        <p class="d">Yellowtail, fluke and avocado over jalapeno white tuna roll with wasabi mayo</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Crazy Tuna<i>クレージーツナ</i></span></div>
+        <p class="d">Spicy tuna or tuna panko fried topped with spicy mayo and caviar</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Spider<i>スパイダー</i></span></div>
+        <p class="d">Softshell crab</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Grand Canyon<i>グランドキャニオン</i></span></div>
+        <p class="d">Shrimp tempura, avocado, topped with sliced avocado, crabmeat, masago, scallion, and tempura flakes</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Paradise<i>パラダイス</i></span></div>
+        <p class="d">Tuna, salmon, eel, asparagus, avocado, kampyo; whole roll in tempura topped with spicy kani salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Volcanic Erupt<i>ボルカニック</i></span></div>
+        <p class="d">Shrimp tempura, avocado wrapped with seared tuna, salmon, yellowtail, white fish sprinkles with fried rice noodles</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Extreme Spicy Tuna<i>激辛ツナ</i></span></div>
+        <p class="d">Spicy tuna and jalapeno inside with fresh tuna and red tobiko on top</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Dragontail<i>ドラゴンテール</i></span></div>
+        <p class="d">Shrimp tempura topped with eel and avocado</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Royal Crown<i>ロイヤルクラウン</i></span></div>
+        <p class="d">Avocado roll topped with spicy tuna, salmon, yellowtail, white tuna, scallop, crawfish and eel</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Passion<i>パッション</i></span></div>
+        <p class="d">Lobster tail and red caviar over mango and tuna roll with spicy mayo</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-spicy-roll">
+    <h2>Spicy Roll</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Mexican<i>メキシカン</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Spicy Tuna<i>マグロ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Spicy Salmon<i>サーモン</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Spicy Yellowtail<i>はまち</i></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-fashion-roll">
+    <h2>Fashion Roll</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Plain Fashion<i>プレーンファッション</i></span></div>
+        <p class="d">Leaf lettuce, tomato, red onion, cucumber, sesame and mayo</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tuna Fashion<i>マグロファッション</i></span></div>
+        <p class="d">Leaf lettuce, tomato, red onion, cucumber, sesame and mayo</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Salmon Fashion<i>サーモンファッション</i></span></div>
+        <p class="d">Leaf lettuce, tomato, red onion, cucumber, sesame and mayo</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Yellowtail Fashion<i>はまちファッション</i></span></div>
+        <p class="d">Leaf lettuce, tomato, red onion, cucumber, sesame and mayo</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-regular-roll">
+    <h2>Regular Roll</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Natto<i>納豆</i></span></div>
+        <p class="d">Bean paste</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Boston<i>ボストン</i></span></div>
+        <p class="d">Shrimp, lettuce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Salmon<i>サーモン</i></span></div>
+        <p class="d">Salmon</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tuna (Tekka)<i>鉄火</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Yellowtail and Scallion<i>ネギはまち</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Cucumber<i>かっぱ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">California<i>カリフォルニア</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Kampyo<i>かんぴょう</i></span></div>
+        <p class="d">Sweet marinated squash</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Vegetable<i>野菜</i></span></div>
+        <p class="d">Avocado, asparagus, cucumber</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Eel &amp; Avocado or Cucumber<i>ウナギとアボカドまたはキュウリ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Green River<i>グリーンリバー</i></span></div>
+        <p class="d">Eel, cucumber, avocado with green seaweed powder</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">T. Roll<i>Tロール</i></span></div>
+        <p class="d">Avocado, egg custard, cucumber, shrimp</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Alaska<i>アラスカ</i></span></div>
+        <p class="d">Salmon, caviar, avocado</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Philadelphia<i>フィラデルフィア</i></span></div>
+        <p class="d">Smoked salmon, cream cheese, avocado</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">American Dream<i>アメリカンドリーム</i></span><span class="p"><span><small>Large 5 pcs</small></span></span></div>
+        <p class="d">Shrimp tempura, caviar, cucumber, avocado, egg custard</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp Tempura<i>海老天ぷら</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Umeshiso<i>梅しそ</i></span></div>
+        <p class="d">Plum paste</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Avocado<i>アボカド</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sweet Potato<i>サツマイモ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tuna Avocado<i>まぐろアボカド</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Futo Maki<i>太巻き</i></span><span class="p"><span><small>Large 5 pcs</small></span></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-sushi-sashimi-entree">
+    <h2>Sushi &amp; Sashimi Entree</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Sushi Regular<i>寿司レギュラー</i></span></div>
+        <p class="d">8 pcs sushi with 1 regular roll</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi Deluxe<i>寿司デラックス</i></span></div>
+        <p class="d">10 pcs sushi with 1 regular roll</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi Deluxe for 2<i>寿司デラックス2人前</i></span></div>
+        <p class="d">20 pcs sushi with 3 regular rolls</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sashimi<i>刺身</i></span></div>
+        <p class="d">15 pcs assorted sashimi</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sashimi for 2<i>刺身2人前</i></span></div>
+        <p class="d">30 pcs assorted sashimi</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi &amp; Sashimi Combo<i>寿司・刺身</i></span></div>
+        <p class="d">10 pcs sashimi, 5 pcs sushi and 1 regular roll</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi &amp; Sashimi Combo for 2<i>寿司・刺身2人前</i></span></div>
+        <p class="d">20 pcs sashimi, 10 pcs sushi and 2 regular rolls</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Bara Chirashi<i>バラちらし</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chirashi<i>ちらし寿司</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tekka Don<i>鉄火丼</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Maki Combo<i>巻きコンビ</i></span></div>
+        <p class="d">California, T-roll and Alaska</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Spicy Maki Combo<i>スパイシー巻きコンビ</i></span></div>
+        <p class="d">Any 3 spicy rolls</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tuna and Yellowtail Platter<i>鮪・はまち寿司</i></span></div>
+        <p class="d">4 pcs tuna, 4 pcs yellowtail sushi</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-a-la-carte">
+    <h2>A La Carte</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Inari / 1 pc<i>いなり</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tuna / Maguro<i>まぐろ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Yellowtail / Hamachi<i>はまち</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Salmon<i>サーモン</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">White Tuna<i>白マグロ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Eel / Unagi<i>うなぎ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sea Eel / Anago<i>穴子</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Wild Yellowtail / Hiramasa<i>ひらまさ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sea Bream / Madai<i>真鯛</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Fluke / Hirame<i>平目</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Smoked Salmon<i>スモークサーモン</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp / Ebi<i>海老</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Uni / Sea Urchin<i>うに</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Ikura<i>いくら</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tobiko<i>とびこ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Otoro / Blue Fin Tuna<i>大トロ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Striped Bass<i>スズキ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Horse Mackerel / Aji<i>あじ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Mackerel / Saba<i>さば</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Jumbo Sweet Shrimp / Botan Ebi<i>ぼたん海老</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Egg / Tamago<i>たまご</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Octopus / Tako<i>タコ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Scallop / Hotate<i>帆立</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Squid / Ika<i>イカ</i></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-teriyaki">
+    <h2>Teriyaki</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Chicken (White or Dark)<i>チキン照り焼き</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp and Chicken<i>海老とチキン照り焼き</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Salmon<i>サーモン照り焼き</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp<i>海老照り焼き</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Beef Negimaki<i>ねぎまき</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Beef<i>ビーフ照り焼き</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tatsuta Age<i>竜田揚げ</i></span></div>
+        <p class="d">Japanese style fried chicken</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Black Cod Misoyaki<i>タラの味噌焼き</i></span></div>
+        <p class="d">Broiled with sweet miso</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-tempura">
+    <h2>Tempura</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Vegetable<i>野菜天ぷら</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Mixed Tempura (Shrimp and Vegetable)<i>天ぷら（海老と野菜）</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp<i>海老天ぷら</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-katsu">
+    <h2>Katsu</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Ton (Pork)<i>トンカツ</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chicken<i>チキンカツ</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-donburi">
+    <h2>Donburi</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Oyako Don<i>親子丼</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Katsu Don<i>カツ丼</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Ten Don<i>天丼</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Una Don<i>鰻丼</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Gyu Don<i>牛丼</i></span></div>
+        <p class="d">Served with miso soup or salad</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-noodle">
+    <h2>Noodle</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Plain Udon / Soba<i>かけうどん・そば</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Zaru Soba<i>ざるそば</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Ten Zaru Soba<i>天ざるそば</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Vegetable Udon / Soba<i>野菜うどん・そば</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tempura Udon / Soba<i>天ぷらうどん・そば</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Beef or Chicken Udon / Soba<i>肉うどん・そば</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Nabeyaki Udon / Soba<i>鍋焼きうどん・そば</i></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-combination-dinner-box">
+    <h2>Combination Dinner Box</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Combination Teriyaki Dinner Box<i>照り焼きお弁当</i></span><span class="p"><span><small>Chicken</small></span><span><small>Salmon</small></span><span><small>Beef</small></span><span><small>Shrimp</small></span></span></div>
+        <p class="d">Mixed tempura, shumai and choice of one regular roll; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi Dinner Box<i>寿司お弁当</i></span></div>
+        <p class="d">5 pcs sushi, mixed tempura, shumai and choice of one regular roll</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sashimi Dinner Box<i>刺身お弁当</i></span></div>
+        <p class="d">7 pcs sashimi, mixed tempura and shumai</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Combination Fish Set<i>魚定食</i></span><span class="p"><span><small>Regular</small></span><span><small>With 5 pcs sashimi</small></span></span></div>
+        <p class="d">Broiled fish, pickles, agedashi tofu, miso soup &amp; rice</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-beverages">
+    <h2>Beverages</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Japanese Soda (Ramune)<i>ラムネ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Carbonated Soda<i>ソーダ</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Cold Green Tea<i>冷たいお茶</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Bottle Water<i>お水</i></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="dinner-desserts">
+    <h2>Desserts</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Ice Cream<i>アイスクリーム</i></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Mochi Ice Cream<i>餅アイスクリーム</i></span><span class="p"><span><small>2 pcs</small></span></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <p class="other"><a class="btn dark" href="lunch-menu.html">View Lunch Menu</a></p>
+</div>
 </main>
 
 <footer>
   <div class="wrap">
-    <nav>
-      <a href="index.html">Home</a><a href="lunch-menu.html">Lunch Menu</a><a href="dinner-menu.html">Dinner Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
-    </nav>
-    <span>&copy; 2026 Wasabi Japanese Restaurant</span>
+    <p><strong>Wasabi Japanese Restaurant</strong><br>848 E. Ridgewood Ave, Ridgewood, NJ 07450</p>
+    <p><a href="tel:+12014937575">201-493-7575</a></p>
+    <p class="copy">&copy; 2026 Wasabi Japanese Restaurant</p>
   </div>
 </footer>
 
 <div class="dock">
-  <a class="d-call" href="tel:+12014937575"><span>Call</span> <strong>201-493-7575</strong></a>
-  <a class="d-map" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener" aria-label="Directions on Google Maps"><strong>Map</strong></a>
+  <a href="tel:+12014937575">Call 201-493-7575</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">Map</a>
 </div>
-
-<script src="menu-data.js"></script>
-<script src="script.js"></script>
 </body>
 </html>

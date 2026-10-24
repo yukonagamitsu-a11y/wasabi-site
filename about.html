@@ -8,57 +8,43 @@
 <meta name="robots" content="noindex, nofollow"><!-- prototype stage: remove this line when the site goes live -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <div class="wrap info-row">
-    <a class="info-box" href="tel:+12014937575">Call for takeout <span class="num">201-493-7575</span></a>
-    <a class="info-box" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">848 E. Ridgewood Ave<br>Ridgewood, NJ 07450</a>
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Wasabi Japanese Restaurant - Home"><img src="images/logo-round.png" alt="Wasabi Japanese Restaurant"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="lunch-menu.html">Lunch</a>
+      <a href="dinner-menu.html">Dinner</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
-  <div class="navbar">
-    <div class="wrap">
-      <a class="logo" href="index.html" aria-label="Wasabi Japanese Restaurant - Home"><img src="images/logo-round.png" alt="Wasabi Japanese Restaurant"></a>
-      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">&#8801;</button>
-      <ul class="nav" id="site-nav">
-        <li><a href="lunch-menu.html">Lunch Menu</a></li>
-        <li><a href="dinner-menu.html">Dinner Menu</a></li>
-        <li class="spacer" aria-hidden="true"></li>
-        <li><a href="about.html" aria-current="page">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li class="home-li"><a href="index.html">Home</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="strip"></div>
 </header>
 
 <main>
-  <div class="wrap about">
-    <div class="about-text">
-      <h1 class="h-left">About Wasabi Japanese Restaurant</h1>
-      <p>Wasabi opened its doors in 2000 and has become one of the premier Japanese restaurants in Ridgewood, New Jersey.</p>
-      <!-- TODO: add the owner's story here -->
-    </div>
-    <div class="about-photo"><img src="images/interior.jpg" alt="Inside Wasabi Japanese Restaurant"></div>
-  </div>
+<div class="wrap about">
+  <h1>About Wasabi</h1>
+  <img src="images/interior.jpg" alt="Inside Wasabi Japanese Restaurant">
+  <p>Wasabi opened its doors in 2000 and has become one of the premier Japanese restaurants in Ridgewood, New Jersey.</p>
+  <p>For the best sushi and Japanese cuisine in Bergen County, come to Wasabi. We are just a few blocks outside of downtown Ridgewood, and we offer full lunch and dinner menus six days a week.</p>
+  <p>For lunch, try a combination platter, noodle dish, rice bowl, or Sushi Sashimi. For dinner, choose from sushi rolls, hot and cold appetizers, teriyaki, tempura or Donburi.</p>
+</div>
 </main>
 
 <footer>
   <div class="wrap">
-    <nav>
-      <a href="index.html">Home</a><a href="lunch-menu.html">Lunch Menu</a><a href="dinner-menu.html">Dinner Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
-    </nav>
-    <span>&copy; 2026 Wasabi Japanese Restaurant</span>
+    <p><strong>Wasabi Japanese Restaurant</strong><br>848 E. Ridgewood Ave, Ridgewood, NJ 07450</p>
+    <p><a href="tel:+12014937575">201-493-7575</a></p>
+    <p class="copy">&copy; 2026 Wasabi Japanese Restaurant</p>
   </div>
 </footer>
 
 <div class="dock">
-  <a class="d-call" href="tel:+12014937575"><span>Call</span> <strong>201-493-7575</strong></a>
-  <a class="d-map" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener" aria-label="Directions on Google Maps"><strong>Map</strong></a>
+  <a href="tel:+12014937575">Call 201-493-7575</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">Map</a>
 </div>
-
-<script src="script.js"></script>
 </body>
 </html>

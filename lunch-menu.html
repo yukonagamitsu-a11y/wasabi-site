@@ -8,63 +8,249 @@
 <meta name="robots" content="noindex, nofollow"><!-- prototype stage: remove this line when the site goes live -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <div class="wrap info-row">
-    <a class="info-box" href="tel:+12014937575">Call for takeout <span class="num">201-493-7575</span></a>
-    <a class="info-box" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">848 E. Ridgewood Ave<br>Ridgewood, NJ 07450</a>
-  </div>
-  <div class="navbar">
-    <div class="wrap">
-      <a class="logo" href="index.html" aria-label="Wasabi Japanese Restaurant - Home"><img src="images/logo-round.png" alt="Wasabi Japanese Restaurant"></a>
-      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">&#8801;</button>
-      <ul class="nav" id="site-nav">
-        <li><a href="lunch-menu.html" aria-current="page">Lunch Menu</a></li>
-        <li><a href="dinner-menu.html">Dinner Menu</a></li>
-        <li class="spacer" aria-hidden="true"></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li class="home-li"><a href="index.html">Home</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap banner menu-banner">
-    <div class="frame"><picture><source media="(max-width:820px)" srcset="images/banner-lunch-m.jpg"><img src="images/banner-lunch.jpg" alt=""></picture></div>
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Wasabi Japanese Restaurant - Home"><img src="images/logo-round.png" alt="Wasabi Japanese Restaurant"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="lunch-menu.html" aria-current="page">Lunch</a>
+      <a href="dinner-menu.html">Dinner</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
 <main>
-  <div class="wrap menu-wrap">
-    <h1 class="page-title">Wasabi's LUNCH Menu</h1>
-    <p class="menu-sub">Lunch 12:00pm - 2:30pm &middot; <strong>Closed on Tuesdays</strong></p>
-    <p class="price-note">Prices will be added here.</p>
-    <div class="menu-actions">
-      <a class="btn ghost" href="dinner-menu.html">View Dinner Menu</a>
-      <button class="btn ghost" id="print-btn" type="button">Print this menu</button>
-    </div>
-    <nav class="chips" id="chips" aria-label="Menu categories"></nav>
-    <div id="menu-root" data-menu="lunch" data-chips="chips" data-print="print-btn"></div>
-  </div>
+<div class="wrap menu">
+  <h1>Lunch Menu</h1>
+  <p class="sub">Lunch 12:00pm - 2:30pm &middot; <strong>Closed on Tuesdays</strong></p>
+  <p class="note">Prices will be added here.</p>
+  <nav class="chips" aria-label="Menu categories">
+    <a href="#lunch-salad">Salad</a>
+    <a href="#lunch-rice-bowls">Rice Bowls</a>
+    <a href="#lunch-entree">Entree</a>
+    <a href="#lunch-noodles">Noodles</a>
+    <a href="#lunch-combination">Combination</a>
+    <a href="#lunch-sushi-sashimi">Sushi &amp; Sashimi</a>
+  </nav>
+
+  <section id="lunch-salad">
+    <h2>Salad</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Mixed Green Salad<i>グリーンサラダ</i></span><span class="p"><span><small>Small</small></span><span><small>Large</small></span></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Avocado Salad<i>アボカドサラダ</i></span><span class="p"><span><small>Small</small></span><span><small>Large</small></span></span></div>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chuka Salad<i>中華サラダ</i></span></div>
+        <p class="d">Sesame flavored seaweed</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="lunch-rice-bowls">
+    <h2>Rice Bowls</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Oyako Bowl<i>親子丼</i></span></div>
+        <p class="d">Simmered chicken with egg and onion over rice</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Katsu Bowl<i>カツ丼</i></span></div>
+        <p class="d">Simmered pork cutlet with egg and onion over rice</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tempura Bowl<i>天丼</i></span></div>
+        <p class="d">Lightly deep-fried vegetables and shrimp over rice</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Eel Bowl<i>うな丼</i></span></div>
+        <p class="d">Grilled eel on rice with sweet sauce</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Gyudon<i>牛丼</i></span></div>
+        <p class="d">Simmered beef and onions over rice</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="lunch-entree">
+    <h2>Entree</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Vegetable Tempura<i>野菜天麩羅</i></span></div>
+        <p class="d">Lightly deep-fried vegetables; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Mix Tempura<i>天麩羅</i></span></div>
+        <p class="d">Lightly deep-fried vegetables and shrimp; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Shrimp Tempura<i>海老天麩羅</i></span></div>
+        <p class="d">Lightly deep-fried shrimp; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Pork Katsu<i>トンカツ</i></span></div>
+        <p class="d">Deep-fried breaded pork cutlet; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chicken Katsu<i>チキンカツ</i></span></div>
+        <p class="d">Deep-fried breaded chicken cutlet; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chicken Teriyaki<i>鶏照焼</i></span></div>
+        <p class="d">Boneless chicken (white or dark) sauteed in teriyaki sauce; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Salmon Teriyaki<i>鮭照焼</i></span></div>
+        <p class="d">Fresh salmon broiled and basted with teriyaki sauce; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Beef Negimaki<i>ねぎまき</i></span></div>
+        <p class="d">Scallions rolled with beef, broiled in teriyaki sauce; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Beef Teriyaki<i>牛照焼</i></span></div>
+        <p class="d">Barbecued prime shell steak marinated in teriyaki sauce; served with miso soup or salad</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="lunch-noodles">
+    <h2>Noodles</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Tempura Udon or Soba<i>天麩羅うどん 又は そば</i></span></div>
+        <p class="d">Udon or soba noodle soup with tempura</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Zaru Soba<i>ざるそば</i></span></div>
+        <p class="d">Cold buckwheat noodle</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Ten Zaru Soba<i>天ざるそば</i></span></div>
+        <p class="d">Cold buckwheat noodle with tempura</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Nabeyaki Udon<i>鍋焼きうどん</i></span></div>
+        <p class="d">Udon noodle soup with tempura, egg and other delicacies</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Noodle Combo Add-on<i>お好みの麺にイナリ寿司のセット</i></span><span class="p"><span><small>Add Inari Sushi</small></span></span></div>
+        <p class="d">Add Inari sushi to any noodle</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="lunch-combination">
+    <h2>Combination</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Combination A</span></div>
+        <p class="d">Small bara chirashi, tempura, boiled vegetables, pickles and miso soup</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Combination B</span></div>
+        <p class="d">Chicken kara-age, shumai, potato salad, pickles, miso soup and rice</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Combination C</span></div>
+        <p class="d">Nabeyaki udon, futomaki, shumai, pickles and hijiki; roll change extra charge</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Combination D</span><span class="p"><span><small>Regular</small></span><span><small>With 5 pcs sashimi</small></span></span></div>
+        <p class="d">Broiled fish, pickles, agedashi tofu, miso soup and rice</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Combination E</span></div>
+        <p class="d">Mini soba or udon, Inari sushi or California roll, croquet, pickles and hijiki</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Combination F</span></div>
+        <p class="d">Gyudon, agedashi tofu, potato salad, pickles and miso soup</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Combination G</span><span class="p"><span><small>Chicken</small></span><span><small>Salmon or Beef</small></span></span></div>
+        <p class="d">Tempura, California roll, shumai, seaweed salad, miso soup and choice of teriyaki; roll change extra charge</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="lunch-sushi-sashimi">
+    <h2>Sushi &amp; Sashimi</h2>
+    <ul class="items">
+      <li>
+        <div class="row"><span class="n">Sushi Deluxe<i>寿司デラックス</i></span></div>
+        <p class="d">9 pieces of sushi and 1 regular roll; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi Regular<i>寿司レギュラー</i></span></div>
+        <p class="d">7 pieces of sushi and 1 regular roll; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi for Two<i>寿司二人前</i></span></div>
+        <p class="d">16 pieces of sushi and 2 regular rolls; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Maki Combo Special<i>巻コンビスペシャル</i></span></div>
+        <p class="d">Daily chef's special roll combo; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Maki Combo 1<i>巻コンビ 1</i></span></div>
+        <p class="d">Any 2 regular rolls; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Maki Combo 2<i>巻コンビ 2</i></span></div>
+        <p class="d">Any 3 regular rolls; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi Sashimi Combo<i>寿司、刺身コンビ</i></span></div>
+        <p class="d">4 pieces of sushi, 5 pieces of sashimi and 1 regular roll; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sushi Sashimi for Two<i>寿司、刺身コンビ二人前</i></span></div>
+        <p class="d">8 pieces of sushi, 10 pieces of sashimi and 2 regular rolls; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Sashimi<i>刺身</i></span></div>
+        <p class="d">9 pieces of sliced fresh raw fish; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Bara Chirashi<i>バラちらし</i></span></div>
+        <p class="d">Assorted diced sashimi on sushi rice; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Chirashi<i>ちらし寿司</i></span></div>
+        <p class="d">Assorted sashimi on sushi rice; served with miso soup or salad</p>
+      </li>
+      <li>
+        <div class="row"><span class="n">Tekka Don<i>鉄火丼</i></span></div>
+        <p class="d">Tuna sashimi on sushi rice; served with miso soup or salad</p>
+      </li>
+    </ul>
+  </section>
+
+  <p class="other"><a class="btn dark" href="dinner-menu.html">View Dinner Menu</a></p>
+</div>
 </main>
 
 <footer>
   <div class="wrap">
-    <nav>
-      <a href="index.html">Home</a><a href="lunch-menu.html">Lunch Menu</a><a href="dinner-menu.html">Dinner Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
-    </nav>
-    <span>&copy; 2026 Wasabi Japanese Restaurant</span>
+    <p><strong>Wasabi Japanese Restaurant</strong><br>848 E. Ridgewood Ave, Ridgewood, NJ 07450</p>
+    <p><a href="tel:+12014937575">201-493-7575</a></p>
+    <p class="copy">&copy; 2026 Wasabi Japanese Restaurant</p>
   </div>
 </footer>
 
 <div class="dock">
-  <a class="d-call" href="tel:+12014937575"><span>Call</span> <strong>201-493-7575</strong></a>
-  <a class="d-map" href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener" aria-label="Directions on Google Maps"><strong>Map</strong></a>
+  <a href="tel:+12014937575">Call 201-493-7575</a>
+  <a href="https://www.google.com/maps/search/?api=1&query=848+E+Ridgewood+Ave+Ridgewood+NJ+07450" target="_blank" rel="noopener">Map</a>
 </div>
-
-<script src="menu-data.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
