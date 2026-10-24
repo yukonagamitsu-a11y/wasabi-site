@@ -80,6 +80,10 @@ h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
 .chips-label{text-align:center;margin-top:20px;font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:8px 0 4px}
 .chip-row{display:contents}
+@media (max-width:640px){
+  .chips{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .chips a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:38px;padding:3px 8px;font-size:17px;line-height:1.2}
+}
 @media (min-width:641px){
   .chips{flex-direction:column;align-items:center}
   .chip-row{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
