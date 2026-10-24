@@ -64,6 +64,10 @@ h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
 .visit a{text-decoration:underline;text-underline-offset:4px}
 .visit a:hover{color:#fff}
 .visit a.btn{text-decoration:none}
+.visit .social{grid-column:1/-1;margin-top:-6px}
+.visit .social a{display:inline-block;padding:6px;color:#cfc4bb;text-decoration:none}
+.visit .social a:hover{color:#fff}
+.visit .social svg{display:block}
 .closed{color:#ff8c90}
 .resv{margin-top:8px;font-family:var(--serif);font-style:italic;font-size:19px;color:#f0d9b5}
 .visit .delivery{grid-column:1/-1;margin-top:10px}
