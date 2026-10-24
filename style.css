@@ -17,7 +17,7 @@ a{color:inherit}
 h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
 
 /* ---------- header ---------- */
-.top{background:linear-gradient(#9c1519 0%,#5c0e11 55%,#150708 100%);border-bottom:1px solid rgba(240,217,181,.3)}
+.top{background:linear-gradient(#9c1519 0%,#5c0e11 55%,#0a0405 100%)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;width:min(1200px,100% - 40px);margin-inline:auto}
 .logo img{width:64px;height:64px}
 .nav{display:flex;gap:6px}
