@@ -17,12 +17,12 @@ a{color:inherit}
 h1,h2{font-family:var(--serif);font-weight:600;line-height:1.2}
 
 /* ---------- header ---------- */
-.top{background:linear-gradient(#b3171b,#a01216);border-bottom:2px solid #cf4a4d}
+.top{background:linear-gradient(#9c1519 0%,#5c0e11 55%,#150708 100%);border-bottom:1px solid rgba(240,217,181,.3)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;width:min(1200px,100% - 40px);margin-inline:auto}
 .logo img{width:64px;height:64px}
 .nav{display:flex;gap:6px}
 .nav a{color:#fff;text-decoration:none;padding:8px 16px;font-family:var(--serif);font-size:22px;letter-spacing:.06em;border-bottom:2px solid transparent}
-.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:#fff}
+.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:#f0d9b5}
 
 /* ---------- buttons (outline, square) ---------- */
 .btn{
