@@ -144,7 +144,7 @@ footer .copy{color:#8c817a;font-size:13px}
 .dock{display:none}
 @media (max-width:640px){
   .chips{display:grid;grid-template-columns:1fr 1fr;gap:5px}
-  .chips a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:30px;padding:2px 6px;font-size:15px;line-height:1.15}
+  .chips a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:30px;padding:3px 6px 1px;font-size:15px;line-height:1.15}
   body{padding-bottom:56px}
   .logo img{width:52px;height:52px}
   .bar{width:calc(100% - 20px)}
